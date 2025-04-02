@@ -1,3 +1,5 @@
+# Configuration server WEB
+
 ```shell
 safa@debian:~$ su
 Mot de passe : root
@@ -46,3 +48,9 @@ search animauxfantastique.fr
 
 systemctl restart apache2
 ```
+# Images
+![image](https://github.com/user-attachments/assets/dddd554b-6190-4494-abf5-99f01c84cfa0)
+![image](https://github.com/user-attachments/assets/75bbb67b-505c-46ba-aee2-6533c223f56b)
+![image](https://github.com/user-attachments/assets/74ba7d4f-c476-429f-8757-b58fdef63103)
+
+
