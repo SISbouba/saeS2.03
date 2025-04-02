@@ -50,6 +50,30 @@ nameserver 192.168.*.*
 search animauxfantastique.fr
 
 systemctl restart apache2
+
+#Partie 4 : Configuration authenfication + mot de passe
+cd /etc/apache2
+
+sudo htpasswd -c .htpasswd abou
+New password : abou 
+Re-type new password : abou
+
+sudo htpasswd .htpasswd gwenn
+New password : gwenn 
+Re-type new password : gwenn
+
+nano /etc/apache2/apache2.conf
+#Authenfication + Mot de Passe
+<Directory "/var/www/SAE-Site-Web-main/SAE/pages/pagePrincipale/index.html">
+	AuthType basic
+	AuthName "Entrez vos indentifiants de connexion"
+	AuthUserFile /etc/apache2/.htpasswd
+	Require valid-user
+</Directory>
+
+
+systemctl restart apache2
+
 ```
 # Images
 ## Terminal
